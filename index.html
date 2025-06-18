@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Komputer Grafik - Universitas Pamulang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-cube"></i>
+                    <h2>Komputer Grafik</h2>
+                </div>
+                <div class="university">Universitas Pamulang</div>
+            </div>
+            
+            <div class="menu-container">
+                <div class="menu-section">
+                    <h3>Pertemuan</h3>
+                    <div id="pertemuan-menu"></div>
+                </div>
+                
+                <div class="menu-section">
+                    <h3>Tambahan</h3>
+                    <div class="menu-item" data-content="overview">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>Overview</span>
+                    </div>
+                    <div class="menu-item" data-content="infografis">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Infografis</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1 id="content-title">Selamat Datang di Dashboard Komputer Grafik</h1>
+                <div class="breadcrumb" id="breadcrumb">
+                    <span>Home</span>
+                </div>
+            </header>
+
+            <div class="content-body" id="content-body">
+                <!-- Default Welcome Content -->
+                <div class="welcome-section">
+                    <div class="welcome-card">
+                        <div class="welcome-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h2>Mata Kuliah Komputer Grafik</h2>
+                        <p>Selamat datang di dashboard interaktif mata kuliah Komputer Grafik. Pilih pertemuan di sidebar untuk mempelajari materi.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">14</div>
+                                <div class="stat-label">Pertemuan</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">7</div>
+                                <div class="stat-label">Algoritma</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">3D</div>
+                                <div class="stat-label">Grafika</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
